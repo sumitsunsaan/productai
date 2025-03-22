@@ -1,0 +1,79 @@
+/* Main Panel Styling */
+.productai-panel {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.productai-panel .panel-heading {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.productai-panel .panel-body {
+    padding: 20px;
+}
+
+/* Button Styling */
+#generate-ai-content {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#generate-ai-content.processing {
+    opacity: 0.7;
+    padding-right: 40px;
+}
+
+#generate-ai-content.processing:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Content Container */
+#ai-content-container {
+    margin-top: 20px;
+}
+
+.generated-content-wrapper {
+    position: relative;
+}
+
+.generated-content {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.apply-content {
+    margin-top: 10px;
+}
+
+/* Loading Animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .productai-panel .form-group {
+        margin-bottom: 15px;
+    }
+    
+    #ai-language-select {
+        width: 100%;
+    }
+}

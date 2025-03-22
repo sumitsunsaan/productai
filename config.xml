@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>productai</name>
+    <displayName><![CDATA[AI Product Generator]]></displayName>
+    <version>3.2.0</version>
+    <author>Sumit Dahal | Hastakala Nepal</author>
+    <description>Automated product description generator</description>
+    <is_configurable>1</is_configurable>
+    <controllers>
+        <controller name="AdminProductAi"/>
+        <controller name="AdminProductAiSettings"/>
+    </controllers>
+</module>
